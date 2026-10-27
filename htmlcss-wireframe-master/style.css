@@ -1,0 +1,134 @@
+/* Wireframe: lavora con l'inspector aperto, prova lì e poi riporta qui il codice
+
+
+/*RESETTARE LO STILE */
+/* METTIAMO I MARGINI A 0 E I PADDING A 0  e il box sizing a border box*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SIMULIAMO LO SMARTPHONE SETTANDO 
+LA LARGHEZZA DEL BODY A 512px 
+e diamo un bordo generale di 1px di tipo dashed 
+e di colore grigio*/
+body {
+    font-family: Arial;
+    width: 512px;
+    border: 1px dashed gray;
+    background-color: #eeede7f9;
+    position: relative;
+}
+
+/*IMPOSTIAMO L'HEADER CON UN PADDING 
+SUPERIORE/INFERIORE DI 10PX E LATERALE 
+(DESTRA/SINISTRA) DI 20PX
+DIAMO UN BORDO DI 2PX SOLID DI COLORE NERO*/
+.header {
+    padding: 10px 20px;
+    background-color: #2e3d54;
+    color: white;
+    text-align: center;
+    border-color: rgba(0, 0, 0, 1.0);
+    border-radius: 5px;
+}
+
+/* IMPOSTIAMO LA CLASSE CONTENT PERCHÉ ABBIA UN
+PADDING DI 20PX SOPRA/SOTTO E 40PX DESTRA/SINISTRA */
+.content {
+    padding: 20px 40px;
+}
+
+/*IMPOSTIAMO LA CLASSE CARD CON LE SEGUENTI CARATTERISTICHE:
+ALTEZZA MINIMA DI 160PX 
+MARGINE INFERIORE DI 20PX 
+UN PADDING GENERALE DI 20PX 
+UN BORDO DI 2PX SOLID DI COLORE NERO
+*/
+.card {
+    position: relative;
+    min-height: 160px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #c1c3c7;
+    border-radius: 10px;
+}
+
+/*
+ALLA CLASSE CARD, MA SOLO PER GLI H2 
+VOGLIO UN MARGINE INFERIORE DI 4PX
+*/
+.card h2 {
+    margin-bottom: 4px;
+    color: #2e3d54;
+}
+
+.card p {
+    color: #5a5c61;
+    font-family: Tahoma;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+
+/*
+PER LA CLASSE FOOTER VOGLIO: 
+UN PADDING DI 10PX SUPERIORE/INFERIORE 
+E 20PX LATERALE
+UN BORDO SUPERIORE DI 2PX SOLIDO E NERO
+*/
+.footer {
+    padding: 10px 20px;
+    background-color: #2e3d54;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+
+}
+
+.card-header {
+    display: flex;
+    align-items: baseline;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.card .badge {
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    font-weight: 800;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.icona-messaggi {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #50965a;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icona-messaggi svg {
+    width: 22px;
+    height: 22px;
+    color: white;
+}
